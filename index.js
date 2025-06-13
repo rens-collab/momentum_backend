@@ -5,7 +5,7 @@ const path = require("node:path")
 
 const app = express();
 
-app.use(cors({ origin: "https://momentum-pink-theta.vercel.app" }));
+app.use(cors({ origin: "https://getmomentum.vercel.app" }));
 
 app.use((req, res, next) => {
   console.log("Request received:", req.method, req.url);

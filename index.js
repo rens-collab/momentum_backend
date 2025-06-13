@@ -15,11 +15,7 @@ app.use((req, res, next) => {
 const quoteRoutes = require("./routes/quotes");
 app.use("/api/quotes", quoteRoutes);
 
-app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
-app.get("/*path", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../frontend/dist", "index.html"));
-});
 
 const PORT = 5001;
 app.listen(PORT, () => {
